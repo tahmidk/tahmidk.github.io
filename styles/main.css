@@ -1,9 +1,20 @@
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: yellow;
+}
+
+::selection {
+    color: black; 
+    background: yellow;
+}
+
 body{
 	min-height: 100%;
 	height: 99.5vh;
 	margin: 0px;
 	padding: 0px;
 	background: rgb(31, 35, 35);
+	overflow-x: hidden;
 }
 
 p{
@@ -11,6 +22,15 @@ p{
 	font-family: "Quicksand", sans-serif;
 	font-size: 20px;
 	font-weight: lighter;
+	line-height: 30px;
+}
+
+small{
+	color: #FFF;
+	font-family: "Quicksand", sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+	line-height: 16px;
 }
 
 h1{
@@ -34,12 +54,56 @@ h3{
 	font-style: normal;
 	font-variant: normal;
 	font-weight: lighter;
-	line-height: 26.4px;
-	margin: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+h4{
+	color: #55d5ff;
+	font-family: "Quicksand", sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: lighter;
+	margin: 1.5em;
+}
+
+h5{
+	color: #FFF;
+	font-family: "Quicksand", sans-serif;
+	font-size: 26px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: lighter;
+	display: inline;
+	line-height: 50px;
+}
+
+h6{
+	color: #000;
+	display: inline;
+	white-space: pre-wrap;
+	font-family: "Quicksand", sans-serif;
+	font-size: 26px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: lighter;
+	border-radius: 25px;
+    border: 1px solid #55d5ff;
+    background-color: #55d5ff;
+    line-height: 50px;
+}
+
+.bar {
+  height: 20px;
+  width: 100px;
+  margin-top: 2.22em;
+  margin-bottom: 2.22em; 
+  background-color: #a1e8ff;
 }
 
 .main_div{
-	background-color: rgb(18, 21, 20);
+	/*background-color: rgb(18, 21, 20);*/
 }
 
 .highlight_1{
@@ -47,13 +111,14 @@ h3{
 }
 
 .highlight_2{
-	color: #fff050;
+	color: #a1e8ff;
 }
 
 .section{
 	padding: 100px 100px;
 	margin: 0 auto;
-	height: 45em;
+	margin-top: 0.5em;
+	height: 15em;
 	max-width: 1440px;
 	min-width: 1300px;
 	background-color: rgb(18, 21, 20);
@@ -62,7 +127,7 @@ h3{
 .introduction{
 	padding: 100px 100px;
 	margin: 0 auto;
-	height: 45em;
+	height: 55em;
 	max-width: 1440px;
 	min-width: 1300px;
 	background-color: rgb(18, 21, 20);
@@ -78,8 +143,57 @@ h3{
 .intro_content{
 	width: 47.5%;
 	height: auto;
-	padding-top: 30em; 
+	padding-top: 28em; 
 	margin: 10px;
 	margin-bottom: 5em; 
 }
 
+.content_container{
+	max-width: 47.5em;
+}
+
+.stats{
+	max-width: 65em;
+}
+
+.inventory{
+	max-width: 65em;
+}
+
+.equip_slot{
+	width: 25em;
+	height: 10em;
+	font-size: 18px;
+	border: 2px solid #FFF;
+	border-radius: 10px;
+	margin: 2em;
+	padding-left: 1em;
+}
+
+.equip_icons{
+	width: 6em; 
+	height: 6em;
+}
+
+.equip_content{
+	display: inline;
+	max-width: 16em;
+}
+
+.equip_part{
+	width: 5em;
+	height: 2em;
+	border: 2px solid #ffda00;
+	border-radius: 10px;
+	background-color: #ffda00;
+	text-align: center;
+	font-family: "Quicksand", sans-serif;
+	font-weight: bolder;
+	font-size: 18px;
+	padding: 5px;
+	margin-left: -3em;
+	margin-top: -1em;
+	color: #000;
+	width: 10em;
+	height: auto;
+}
